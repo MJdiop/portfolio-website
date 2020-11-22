@@ -1,5 +1,15 @@
 console.log('Its working');
 
+// Infos
+const Alert = document.querySelector('.remove-alert');
+
+const removeAlert = () => {
+  document.querySelector('.alert').style.display = 'none';
+};
+
+Alert.addEventListener('click', removeAlert);
+// end of infos
+
 let theme = localStorage.getItem('theme');
 
 if (theme == null) {
